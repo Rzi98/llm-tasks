@@ -1,0 +1,13 @@
+# Pretrained Bart-large model summarisation model #
+- Able to provide summary of 2-3 sentences
+- However the summary lacks context 
+- The model includes lines from the original conversation directly instead of summarising the main idea behind the conversation
+- Model unable to provide summary for long conversations (example Conversation_id = 73) as model's max_token is 1024
+
+# Llama3 8GB Instruct 4bit Generation model #
+- Able to provide summary of 2-3 sentences with good context
+- Clear prompt allows model to give desired output
+- Able to summarise long conversations. 
+
+### Model Selection ###
+- Llama3 8GB Instruct 4bit Generation model is selected as it provides better summary with context and is able to summarise long conversations.

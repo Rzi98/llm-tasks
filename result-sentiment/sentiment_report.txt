@@ -1,0 +1,18 @@
+## Bart pretrained zero shot classification ## 
+- Accuracy: 35% 
+
+## Roberta fine-tuned emotion classification from hf ## 
+- Initial 28 outputs
+- Scaled down to 8 outputs as required
+- Accuracy: 39%
+
+## The dataset ## 
+- The dataset we have seems a little ambigous in the label as the same text can be classified into different emotions.
+- To achieve higher accuracy, fine-tuning is necessary to get the model to understand the dataset better.
+- However, due to time constraints and resource limitations, I stick to the pretrained versions of the models.
+- MPS OOM in finetune.ipynb
+
+## Future work ##
+- Fine tune with the dataset to get better accuracy but requires resources
+- Use API based model, prompting into a generation model with few shot templates might help (GPT-4 but paid)
+
